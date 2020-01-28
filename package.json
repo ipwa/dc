@@ -1,0 +1,28 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "formik": "^2.0.3",
+    "node-sass": "^4.13.0",
+    "prop-types": "^15.6.1",
+    "qs": "^6.5.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
+    "react-throbber": "^1.0.4",
+    "whatwg-fetch": "^2.0.4",
+    "yup": "^0.28.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "sass": "node-sass ../../../../../themes/custom/sgs_theme/sass -o ../../../../../themes/custom/sgs_theme/css"
+  }
+}
