@@ -1,0 +1,418 @@
+/***********************
+ * Begin custom styles.
+ ***********************/
+input.error {
+  border-color: red;
+}
+
+.input-feedback {
+  color: red;
+  margin-top: 0.25rem;
+}
+
+#react-app-container {
+  padding-top: 30px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+@media screen and (max-width: 64em) {
+  .grid {
+    display: block;
+  }
+}
+
+.grid article {
+  margin: 0.5rem 0.5rem 2rem;
+  width: 30%;
+}
+@media screen and (max-width: 64em) {
+  .grid article {
+    width: 100%;
+  }
+}
+
+.hide input,
+.toggled a,
+.hide-button {
+  display: none !important;
+}
+
+.toggled input {
+  margin-top: 0.25rem;
+}
+
+.hide {
+  margin-top: 1rem;
+}
+
+.header--brand .pattern--block:first-child {
+  display: block !important;
+}
+
+.form__intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form__element {
+  margin-bottom: 2rem;
+}
+.form__element-description {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+.form__element > label:first-child {
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.form .req {
+  color: #be212a;
+  margin: 0 0.2rem 0 0;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  background: #fff;
+  border-color: #1b1464;
+  position: absolute;
+  top: 0.8rem;
+  display: block;
+  left: 1.2rem;
+  z-index: 1;
+}
+
+.form input[type="radio"]::before {
+  background: #0073ff;
+}
+
+.form input[type="checkbox"]::before {
+  background: #fff;
+  color: #0073ff;
+}
+
+.form input[type="radio"]:checked + label,
+.form input[type="checkbox"]:checked + label {
+  background: #0073ff;
+  color: #fff;
+  display: block;
+}
+
+.form input[type="radio"] + label,
+.form input[type="checkbox"] + label {
+  margin-left: 0;
+  width: 100%;
+  font-weight: 600;
+  color: #1b1464;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  background: #edecf2;
+  padding: 1rem 1rem 1rem 3.5rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: block;
+}
+
+.form__radio-label:not(:last-child),
+.form__checkbox-label:not(:last-child) {
+  font-weight: 400;
+}
+
+.form__radio-label input,
+.form__checkbox-label input {
+  background: white;
+  margin-right: 0.5rem;
+}
+
+.form__option {
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+.form__error {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.5rem;
+  top: 1rem;
+  position: relative;
+  left: 1rem;
+}
+
+.form__consent p {
+  margin-bottom: 1rem;
+}
+
+.form__buttons {
+  margin-bottom: 2rem;
+}
+
+.form .button[disabled] {
+  color: #666;
+  border-color: #666;
+}
+.form .button[disabled]:hover,
+.form .button[disabled]:focus {
+  background-color: #e6e6e6;
+  color: #666;
+}
+
+.wrapper {
+  font-family: "Helvetica";
+}
+
+.StepProgress {
+  position: relative;
+  padding-left: 3rem;
+  list-style: none;
+}
+.StepProgress::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.8rem;
+  width: 10px;
+  height: 100%;
+  border-left: 2px solid #ccc;
+}
+.StepProgress-item {
+  position: relative;
+  counter-increment: list;
+}
+.StepProgress-item:not(:last-child) {
+  padding-bottom: 2rem;
+}
+.StepProgress-item::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -2.4rem;
+  height: 100%;
+  width: 10px;
+}
+.StepProgress-item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -2.8rem;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.StepProgress-item.is-last::before {
+  background-color: #fff;
+}
+.StepProgress-item:last-child::before {
+  background-color: #fff;
+}
+.StepProgress-item.is-done::after {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #1b1464;
+  background-color: #1b1464;
+}
+.StepProgress-item.current::before {
+  border-left: 2px solid green;
+}
+.StepProgress-item.current::after {
+  content: counter(list);
+  padding-top: 1px;
+  width: 19px;
+  height: 18px;
+  top: -4px;
+  left: -40px;
+  font-size: 14px;
+  text-align: center;
+  color: green;
+  border: 2px solid green;
+  background-color: white;
+}
+.StepProgress.is-numeric .StepProgress-item::after {
+  content: counter(list);
+  padding-top: 1px;
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+}
+.StepProgress strong {
+  display: block;
+}
+.StepProgress .title.is-5 {
+  margin-bottom: 0.5rem;
+}
+
+.referral {
+  background-color: #f4f5f8;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.referral__link {
+  font-size: 2rem;
+  color: #1b1464;
+}
+.referral p {
+  margin-top: 1.25rem;
+}
+
+.header--beta {
+  border-top: 1px solid #e6e6e6;
+  padding: 0.6rem 0;
+  color: #1b1464;
+  font-weight: 600;
+}
+
+.header span {
+  background-color: #1b1464;
+  color: #ffffff;
+  font-weight: 900;
+  padding: 0.3rem 0.6rem;
+  margin: 0 1rem 0 0;
+}
+
+.footer--bottom--right .pattern--block {
+  width: 8.5rem;
+}
+
+.footer--bottom--middle {
+  display: flex !important;
+  align-items: center;
+  font-size: 0.625rem;
+  color: #0a0a0a;
+}
+
+.pattern--story {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.pattern--story__bg {
+  background: #0073ff;
+  overflow: hidden;
+}
+.pattern--story__bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -250px;
+  top: -250px;
+  background-size: contain;
+  height: 1000px;
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../images/as-flower-blue.png);
+  width: 1000px;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  mix-blend-mode: difference;
+}
+.pattern--story__white-text {
+  color: #fff;
+  margin: 3rem 0 3rem;
+}
+.pattern--story__white-text .title {
+  color: #fff;
+}
+.pattern--story__white-text .field--field-story-strap-line {
+  font-size: 1.125rem;
+}
+.pattern--story__white-text .button {
+  margin: 2.5rem 0 0 0;
+}
+.pattern--story__form {
+  padding-top: 4rem;
+  display: none;
+}
+.pattern--story .has-background-white {
+  background-color: #fff;
+}
+.pattern--story__collapsible {
+  padding-bottom: 2rem;
+}
+.pattern--story__collapsible[open=""] {
+  padding-bottom: 0;
+}
+.pattern--story__confirmation {
+  padding-top: 4rem;
+}
+.pattern--story__confirmation h3 {
+  text-align: left;
+}
+.pattern--story__confirmation .button {
+  padding: 0.8rem 0.2rem 0.8rem 1rem;
+  direction: rtl;
+  background: #0073ff;
+  width: 100%;
+  margin: 0 0 1rem;
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.pattern--story__confirmation [class^="icon-"]:before,
+.pattern--story__confirmation [class*=" icon-"]:before {
+  margin: 0 0 0 0.5rem;
+  padding: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  color: #0073ff;
+  border-radius: 50%;
+  display: block;
+  text-indent: -6px;
+  float: right;
+  position: absolute;
+  top: 0.3rem;
+}
+.pattern--story__confirmation .icon-twitter:before {
+  text-indent: -12px;
+}
+.pattern--story details {
+  color: #1b1464;
+  border-bottom: #949494;
+  margin-bottom: 1.25rem;
+}
+.pattern--story details > * {
+  background-color: white;
+  box-sizing: border-box;
+}
+.pattern--story details form {
+  padding: 1rem 0;
+}
+.pattern--story details form .form-actions {
+  text-align: center;
+}
+.pattern--story details summary {
+  font-weight: 900;
+  color: #1b1464;
+  padding: 0.75rem;
+  text-align: center;
+  max-width: 20.5rem;
+  margin: auto;
+  border-bottom: 2px solid #d8d8d8;
+}
+.pattern--story details summary:after {
+  margin-left: 0.75rem;
+}
+.pattern--story details[open=""],
+.pattern--story details[open="open"] {
+  border-bottom: 2px solid #d8d8d8;
+}
+.pattern--story details[open=""] summary,
+.pattern--story details[open="open"] summary {
+  border: none;
+}
+
+@media screen and (min-width: 1048px) {
+  .pattern--story__white-text {
+    margin: 5rem 0 3rem;
+  }
+}
