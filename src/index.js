@@ -8,7 +8,7 @@ import SRForm from "./components/SRForm";
 import SRReceived from "./components/SRReceived";
 import QuestionContext from "./provider/question";
 import "./external.css";
-import "./styles.css";
+import "./style.css";
 
 const Routing = () => {
   const questions = React.useState({});
