@@ -6,7 +6,7 @@
     "formik": "^2.0.3",
     "node-sass": "^4.13.0",
     "prop-types": "^15.6.1",
-    "qs": "^6.5.2",
+    "qs": "^6.9.7",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
